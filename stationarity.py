@@ -1,5 +1,4 @@
-"""Check stationarity"""
-
+"""Check stationarity with Dickey-Fuller Test"""
 
 def check_stationarity(timeseries):
 
@@ -22,3 +21,4 @@ def check_stationarity(timeseries):
     for key,value in dftest[4].items():
         dfoutput['Critical Value (%s)'%key] = value
     print(dfoutput)
+    
